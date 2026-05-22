@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padmavati – Next Generation Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <div class="loader-ring"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- CURSOR GLOW -->
+  <div id="cursor-glow"></div>
+
+  <!-- FLOATING PARTICLES CANVAS -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- 3D BACKGROUND GEOMETRIC SHAPES -->
+  <div class="scene-3d">
+    <div class="cube-3d">
+      <div class="cube-face front"></div>
+      <div class="cube-face back"></div>
+      <div class="cube-face right"></div>
+      <div class="cube-face left"></div>
+      <div class="cube-face top"></div>
+      <div class="cube-face bottom"></div>
+    </div>
+    <div class="pyramid-3d">
+      <div class="pyramid-face"></div>
+      <div class="pyramid-face"></div>
+      <div class="pyramid-face"></div>
+      <div class="pyramid-face"></div>
+    </div>
+    <div class="ring-3d"></div>
+    <div class="ring-3d ring-2"></div>
+    <div class="dodecahedron-3d">
+      <div class="dodeca-face"></div>
+      <div class="dodeca-face"></div>
+      <div class="dodeca-face"></div>
+      <div class="dodeca-face"></div>
+      <div class="dodeca-face"></div>
+      <div class="dodeca-face"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Portfolio Website</a>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text" data-depth="0.3">
+        <p class="hero-greeting" data-depth="0.1">Hello, I'm</p>
+        <h1 class="hero-name" data-depth="0.4">
+          <span class="hero-name-3d-layer" data-layer="1">Padmavati</span>
+          <span class="hero-name-3d-layer" data-layer="2">Padmavati</span>
+          <span class="hero-name-3d-layer" data-layer="3">Padmavati</span>
+          Padmavati
+        </h1>
+        <div class="hero-role-wrapper" data-depth="0.2">
+          <span class="hero-role-label">I'm a </span>
+          <span class="hero-role" id="typed-role"></span>
+        </div>
+        <p class="hero-tagline" data-depth="0.15">Building Modern, Interactive &amp; Intelligent Web Experiences</p>
+        <div class="hero-buttons" data-depth="0.1">
+          <a href="#contact" class="btn btn-primary">Hire Me <i class="fas fa-paper-plane"></i></a>
+          <a href="#" class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
+          <a href="#projects" class="btn btn-ghost">View Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-socials" data-depth="0.05">
+          <a href="#" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:padmavatibellikoppa@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" data-depth="0.4">
+        <div class="hero-image-glowing">
+          <div class="hero-image-placeholder">
+            <img src="images/profile.jpeg" alt="Profile Picture" class="profile-img">
+          </div>
+        </div>
+        <div class="floating-tech-icons-3d">
+          <div class="tech-orbit" style="--angle: 0deg; --delay: 0s;"><i class="fab fa-react"></i></div>
+          <div class="tech-orbit" style="--angle: 60deg; --delay: 0.5s;"><i class="fab fa-js-square"></i></div>
+          <div class="tech-orbit" style="--angle: 120deg; --delay: 1s;"><i class="fab fa-python"></i></div>
+          <div class="tech-orbit" style="--angle: 180deg; --delay: 1.5s;"><i class="fab fa-html5"></i></div>
+          <div class="tech-orbit" style="--angle: 240deg; --delay: 2s;"><i class="fab fa-css3-alt"></i></div>
+          <div class="tech-orbit" style="--angle: 300deg; --delay: 2.5s;"><i class="fab fa-git-alt"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text reveal" data-depth="0.2">
+        <p>I'm a passionate <strong>Software Developer</strong> with a strong interest in <strong>Frontend</strong> and <strong>Full Stack Development</strong>. I love building modern, interactive, and intelligent web applications that deliver seamless user experiences.</p>
+        <p>Currently exploring <strong>AI-powered applications</strong> and cutting-edge <strong>web technologies</strong>. I'm a quick learner, a creative problem solver, and someone who thrives on turning complex problems into elegant, user-friendly solutions.</p>
+        <div class="about-stats">
+          <div class="stat-card reveal" data-tilt data-depth="0.1">
+            <span class="stat-number" data-count="8">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card reveal" data-tilt data-depth="0.1">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-card reveal" data-tilt data-depth="0.1">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Hackathons Attended</span>
+          </div>
+          <div class="stat-card reveal" data-tilt data-depth="0.1">
+            <span class="stat-number" data-count="15">0</span>
+            <span class="stat-label">Technologies Learned</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image reveal" data-depth="0.3">
+        <div class="about-image-glowing">
+          <div class="about-image-placeholder">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+        </div>
+        <div class="about-float-shapes">
+          <div class="about-shape"></div>
+          <div class="about-shape"></div>
+          <div class="about-shape"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-react"></i></div>
+        <h3>React</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-python"></i></div>
+        <h3>Python</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-java"></i></div>
+        <h3>Java</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <h3>SQL</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+        <h3>Git &amp; GitHub</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Responsive Web Design</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>UI/UX Design</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image">
+          <div class="project-image-placeholder"><i class="fas fa-robot"></i></div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>AI Resume Builder</h3>
+          <p>AI-powered resume builder that creates professional resumes using intelligent templates and content suggestions.</p>
+          <div class="project-tags">
+            <span>React</span><span>Python</span><span>AI</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image">
+          <div class="project-image-placeholder"><i class="fas fa-user-lock"></i></div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Student Login System</h3>
+          <p>Secure student authentication system with role-based access control and dashboard management.</p>
+          <div class="project-tags">
+            <span>Java</span><span>SQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image">
+          <div class="project-image-placeholder"><i class="fas fa-magic"></i></div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>PromptForge AI</h3>
+          <p>AI prompt engineering tool that helps users craft, optimize, and manage prompts for LLMs efficiently.</p>
+          <div class="project-tags">
+            <span>React</span><span>AI</span><span>Node.js</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image">
+          <div class="project-image-placeholder"><i class="fas fa-shopping-cart"></i></div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Online Shopping Website</h3>
+          <p>Full-featured e-commerce platform with product listing, cart, checkout, and payment integration.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span><span>SQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image">
+          <div class="project-image-placeholder"><i class="fas fa-briefcase"></i></div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Job &amp; Internship Finder</h3>
+          <p>Platform that aggregates job and internship opportunities with smart filtering and alerts.</p>
+          <div class="project-tags">
+            <span>React</span><span>Python</span><span>API</span><span>CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal" data-tilt>
+        <div class="project-image">
+          <div class="project-image-placeholder"><i class="fas fa-brain"></i></div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Hallucination Detection System</h3>
+          <p>AI system that detects and mitigates hallucinations in large language model outputs.</p>
+          <div class="project-tags">
+            <span>Python</span><span>AI</span><span>ML</span><span>NLP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Internship <span>Experience</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2025 - Present</div>
+          <h3>Frontend Development Internship</h3>
+          <p>Building responsive and interactive user interfaces with modern frameworks. Collaborating on real-world projects and implementing pixel-perfect designs.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024 - 2025</div>
+          <h3>Web Development Internship</h3>
+          <p>Developed full-stack web applications using HTML, CSS, JavaScript, and backend technologies. Gained experience with version control and agile methodology.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2024</div>
+          <h3>AI/ML Internship</h3>
+          <p>Worked on machine learning models and AI-powered solutions. Gained hands-on experience with data preprocessing, model training, and deployment.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">2023 - 2024</div>
+          <h3>Full Stack Internship</h3>
+          <p>Built end-to-end applications with both frontend and backend technologies. Integrated APIs, databases, and deployed applications to production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Certifications &amp; <span>Achievements</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+        <h3>Hackathon Participation</h3>
+        <p>Participated in multiple hackathons, building innovative solutions under time constraints.</p>
+      </div>
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Web Development Certification</h3>
+        <p>Certified in modern web development including HTML, CSS, JavaScript, and frameworks.</p>
+      </div>
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI/ML Workshop</h3>
+        <p>Completed intensive workshop on artificial intelligence and machine learning fundamentals.</p>
+      </div>
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon"><i class="fas fa-medal"></i></div>
+        <h3>Coding Achievements</h3>
+        <p>Consistent performer on coding platforms with strong problem-solving and algorithmic skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>padmavatibellikoppa@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>8549054525</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Bangalore</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <span class="form-error"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+          <span class="form-error"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <span class="form-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:padmavatibellikoppa@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2025 Padmavati. All Rights Reserved.
+      </p>
+      <p class="footer-credit">Designed &amp; Developed by Padmavati</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
